@@ -1,3 +1,10 @@
+username=["alex","phonix","rio","sanhand","xiamrun","steve"]
+login=input("Enter your username: ").lower().strip()
+while login not in username:
+  print("Invalid username")
+  login=input("Enter your username: ").lower().strip()
+print("login successful")
+print("quiz start")
 score=0
 Dictionary = {"Gerry Austin steals a wallet and uses the cash to rent a Mini. Which is the colour of MIni?     A) white  B) yellow C) black D) red":"B",
               "Gerry and John pick up___,who is heading to Wanganui A Sue B Shirl  C Mulvaney  D YOU":"B",
@@ -20,10 +27,11 @@ for x in Dictionary:
             print("your score is: ",score)
         else:
             print("Incorrect,the answer is",Dictionary[x])
-if score==[3,4] :
+if score==3 or score==4 :
     print("well done!but still need learn about it.")
-if score==[1,2] :
+if score==1 or score==2:
     print("you need watch more about it")
 if score== 5 :
     print("awsome,you pass this quiz")
+        
         
