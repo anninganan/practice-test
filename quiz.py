@@ -13,11 +13,11 @@ Dictionary = {"Gerry Austin steals a wallet and uses the cash to rent a Mini. Wh
               "This movie release at ___year (Goodbye Pork Pie)   A 1985  B 1991  C 2024  D 1981":"D"}
 for x in Dictionary:
     print(x)
-    answer=input("Your answer is  :")
+    answer=input("Your answer is  :").upper().strip()
     validate_answers=['A','B','C','D']
     while answer  not in validate_answers:
-        print("invalid answer answer should in A B C D")
-        answer=input("your answer is :")
+        print("invalid answer, answer should in A B C D")
+        answer=input("your answer is :").upper().strip()
         print(validate_answers)
     else:
         print("your answer is"+ answer)
@@ -33,5 +33,4 @@ if score==1 or score==2:
     print("you need watch more about it")
 if score== 5 :
     print("awsome,you pass this quiz")
-        
         
